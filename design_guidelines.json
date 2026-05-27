@@ -1,0 +1,108 @@
+{
+  "theme": "Light",
+  "archetype": "Organic & Earthy + Luxury Fusion",
+  "brand_identity": {
+    "name": "Reborn Beauty Ladies Salon",
+    "tagline": "Your Glow, Our Craft",
+    "vibe": "Warm, feminine, elegant. Indian-modern aesthetic."
+  },
+  "colors": {
+    "background": "#FFF8E7",
+    "text_primary": "#2D2D2D",
+    "text_secondary": "#5a5a5a",
+    "primary": "#C2185B",
+    "secondary": "#F9A825",
+    "surface": "#FFFFFF",
+    "border": "rgba(45, 45, 45, 0.1)"
+  },
+  "typography": {
+    "fonts": {
+      "heading": "'Playfair Display', serif",
+      "body": "'Lato', sans-serif"
+    },
+    "scale": {
+      "h1": "text-5xl md:text-7xl font-light tracking-tighter",
+      "h2": "text-4xl md:text-5xl font-light tracking-tight",
+      "h3": "text-2xl md:text-3xl font-light",
+      "body": "text-base md:text-lg font-light leading-relaxed",
+      "overline": "text-sm uppercase tracking-[0.2em] font-medium text-[#C2185B]"
+    }
+  },
+  "layout_and_spacing": {
+    "section_padding": "py-20 md:py-32",
+    "container": "max-w-7xl mx-auto px-6 md:px-12",
+    "grid_strategy": "Tetris bento grids for gallery to create asymmetry. Generous spacing (p-12, p-16) across sections.",
+    "border_radius": "rounded-none or subtle rounded-md (max 8px). Avoid heavy rounding to keep the luxury edge."
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-[#C2185B] text-[#FFF8E7] px-8 py-4 hover:bg-[#A3144C] transition-colors duration-300",
+      "secondary": "border border-[#C2185B] text-[#C2185B] px-8 py-4 hover:bg-[#C2185B] hover:text-[#FFF8E7] transition-colors duration-300",
+      "primary_hero": "bg-[#C2185B] text-[#FFF8E7] px-8 py-4 hover:bg-[#A3144C] transition-colors duration-300",
+      "secondary_hero": "border border-[#FFF8E7] text-[#FFF8E7] px-8 py-4 hover:bg-[#FFF8E7] hover:text-[#2D2D2D] transition-colors duration-300"
+    },
+    "services_list": "Cardless approach. Use flat rows with 1px border-b border-[#2D2D2D]/10. Padding inside rows. On hover, background changes to a very subtle warm white.",
+    "navigation": "Sticky top-0 z-50 glassmorphism: backdrop-blur-xl bg-[#FFF8E7]/90 border-b border-[#2D2D2D]/10."
+  },
+  "sections_breakdown": {
+    "Header": {
+      "layout": "Sticky navigation, Logo on left, Links center, Book CTA on right.",
+      "content": "Links: About, Services, Gallery, Contact."
+    },
+    "Hero": {
+      "layout": "Full viewport height (min-h-screen) with absolute background image.",
+      "overlay": "bg-black/40 overlay to ensure text contrast while letting the premium bridal shot shine.",
+      "content": "Centered or Left-aligned on large screens. H1 Salon Name, H2 Tagline, two CTAs side-by-side. Text color #FFF8E7."
+    },
+    "About_Us": {
+      "layout": "2-column grid on desktop (grid-cols-1 md:grid-cols-2), gap-16 items-center.",
+      "content": "Story of 10+ years, women-only safe space. Overlap the text box slightly over the image for an editorial feel."
+    },
+    "Services": {
+      "layout": "1-column list or 2-column masonry of categories (Bridal, Hair, Skin, Waxing & Nails).",
+      "content": "Minimalist service items with price ranges right-aligned. Use lucide-react icons in a soft gold circle."
+    },
+    "Gallery": {
+      "layout": "Tetris-style CSS Grid. Mix of row-span-2 and col-span-2 to create a dynamic masonry/bento vibe. Gap-4.",
+      "content": "Visuals of makeup, hair, skin. Image hover effect: subtle scale-up inside an overflow-hidden container."
+    },
+    "Contact_Location": {
+      "layout": "2-column split. Left: Contact info, hours, address with large typography. Right: Google Maps iframe.",
+      "background": "bg-[#2D2D2D] text-[#FFF8E7] to create contrast for the footer and final CTA."
+    }
+  },
+  "media": {
+    "hero_bg": "https://static.prod-images.emergentagent.com/jobs/reborn-beauty-ladies-salon-btm/images/446d32038938846474756ee62236b7bb0f0bacdac33718ea450ecbf301e11723.png",
+    "about_image": "https://images.pexels.com/photos/7195809/pexels-photo-7195809.jpeg",
+    "gallery": [
+      {
+        "url": "https://static.prod-images.emergentagent.com/jobs/reborn-beauty-ladies-salon-btm/images/d3d6167d25312a32277180a76b1f9a409630709e49aef1554cb0ef81a2f9e439.png",
+        "description": "Skin and subtle makeup",
+        "span": "col-span-1 row-span-1"
+      },
+      {
+        "url": "https://images.pexels.com/photos/29368881/pexels-photo-29368881.jpeg",
+        "description": "Indian Bride full attire",
+        "span": "col-span-1 md:col-span-2 row-span-2"
+      },
+      {
+        "url": "https://static.prod-images.emergentagent.com/jobs/reborn-beauty-ladies-salon-btm/images/eb5b8e13ee6e73d8f34a3c3062b6c293eff7209919047fac997beed0aa0395e4.png",
+        "description": "Hair styling",
+        "span": "col-span-1 row-span-1"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1684868268327-7e5590bcfbd6",
+        "description": "Traditional red bridal",
+        "span": "col-span-1 md:col-span-2 row-span-1"
+      }
+    ]
+  },
+  "technical_instructions": [
+    "Use Lucide React icons.",
+    "Add 'data-testid' to all interactive elements (buttons, links).",
+    "Use standard <a> tags with 'tel:' links for appointments.",
+    "Make it purely frontend standard React (.js files, NOT .tsx).",
+    "Implement smooth scrolling via CSS (scroll-behavior: smooth).",
+    "Ensure all text over the hero image passes WCAG contrast, using text-shadow if necessary."
+  ]
+}
