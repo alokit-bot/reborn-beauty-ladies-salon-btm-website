@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/reborn-beauty-ladies-salon-btm/static/css/main.0989efbf.css",
+    "main.js": "/reborn-beauty-ladies-salon-btm/static/js/main.f1760c62.js",
+    "index.html": "/reborn-beauty-ladies-salon-btm/index.html",
+    "main.0989efbf.css.map": "/reborn-beauty-ladies-salon-btm/static/css/main.0989efbf.css.map",
+    "main.f1760c62.js.map": "/reborn-beauty-ladies-salon-btm/static/js/main.f1760c62.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0989efbf.css",
+    "static/js/main.f1760c62.js"
+  ]
+}
